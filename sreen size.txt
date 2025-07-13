@@ -1,0 +1,14 @@
+Intuit:
+https://github.com/intuit/sdp
+
+dependencies {
+  implementation 'com.intuit.sdp:sdp-android:1.1.1'
+}
+
+dependencies {
+  implementation 'com.intuit.ssp:ssp-android:1.1.1'
+}
+
+ssp,sdp
+
+
