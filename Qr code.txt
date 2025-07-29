@@ -1,0 +1,62 @@
+package com.example.atonce.core.utils
+
+import android.graphics.Bitmap
+import com.google.zxing.BarcodeFormat
+import com.journeyapps.barcodescanner.BarcodeEncoder
+
+//fun generateQRCode(code: String, height: Int, width: Int): Bitmap {
+//    val encoder = BarcodeEncoder()
+//    val bitmap: Bitmap?=null
+//    try {
+//         bitmap = encoder.encodeBitmap(code, BarcodeFormat.QR_CODE, width, height)
+//        return bitmap
+//    } catch (e: Exception) {
+//        return bitmap!
+//    }
+//}
+
+/*
+fun generateQRCode(code: String, height: Int, width: Int): Bitmap? {
+    return try {
+        val encoder = BarcodeEncoder()
+        encoder.encodeBitmap(code, BarcodeFormat.QR_CODE, width, height)
+    } catch (e: Exception) {
+        e.printStackTrace()
+        null
+    }
+}
+
+*
+ *     implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
+ *
+ * @Preview(showBackground = true)
+ * @Composable
+ * fun QRCode(){
+ *     val qr = generateQRCode("ali012",400,400)
+ *     Box (
+ *         contentAlignment = Alignment.Center
+ *     ){
+ *         Image(
+ *             bitmap = qr?.asImageBitmap()!!,
+ *             contentDescription = ""
+ *         )
+ *     }
+ * }
+ */
+
+
+/*
+* prevent screen shoots inside composable
+*
+* val activity = LocalContext.current as Activity
+    DisposableEffect(Unit) {
+        activity.window.setFlags(
+            WindowManager.LayoutParams.FLAG_SECURE,
+            WindowManager.LayoutParams.FLAG_SECURE
+        )
+
+        onDispose {
+            activity.window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
+        }
+    }
+* */
